@@ -1,3 +1,5 @@
 def time_formatter(minutes)
-  # your code here
+  minutes_left = minutes % 60
+  hours = (minutes - minutes_left) / 60
+  "#{hours} hour(s), #{minutes_left} minute(s)"
 end
